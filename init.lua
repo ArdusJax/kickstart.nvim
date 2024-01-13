@@ -196,7 +196,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'aufhocker',
+        theme = 'night-owl',
         component_separators = {left=' ', right=' '},
         section_separators = {left='', right=''},
       },
@@ -316,6 +316,8 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+vim.cmd.colorscheme 'night-owl'
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
