@@ -318,7 +318,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open float
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- set the default colorscheme here
-vim.cmd.colorscheme 'night-owl'
+vim.cmd.colorscheme 'mellow'
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
