@@ -88,7 +88,7 @@ require('lazy').setup({
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-      { 'j-hui/fidget.nvim', opts = {} },
+      { 'j-hui/fidget.nvim',       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       'folke/neodev.nvim',
@@ -113,7 +113,7 @@ require('lazy').setup({
   },
 
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 'folke/which-key.nvim',  opts = {} },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -196,9 +196,9 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'night-owl',
-        component_separators = {left=' ', right=' '},
-        section_separators = {left='', right=''},
+        theme = 'aufhocker',
+        component_separators = { left = ' ', right = ' ' },
+        section_separators = { left = '', right = '' },
       },
     },
   },
@@ -318,7 +318,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open float
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- set the default colorscheme here
-vim.cmd.colorscheme 'mellow'
+vim.cmd.colorscheme 'carbonfox'
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
